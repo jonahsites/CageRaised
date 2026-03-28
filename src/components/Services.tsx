@@ -35,7 +35,7 @@ export const Services = ({
       title: 'PITCHING',
       description: 'Build velocity and command while maintaining arm health. Learn the art of pitch sequencing and mound presence.',
       icon: 'Zap',
-      image: 'https://images.unsplash.com/photo-1515516089376-88db1e26e9c0?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://t4.ftcdn.net/jpg/03/82/25/99/360_F_382259953_Zt1nLWCUUwSHtoiJUZqwmcUkjieaXdOw.jpgq=80&w=2070&auto=format&fit=crop',
     },
     {
       title: 'FIELDING',
