@@ -29,13 +29,13 @@ export const Services = ({
       title: 'HITTING',
       description: 'Master the mechanics of power and precision. Our hitting program focuses on swing path, timing, and mental approach.',
       icon: 'Target',
-      image: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1508344928928-7165b67de128?q=80&w=2070&auto=format&fit=crop',
     },
     {
       title: 'PITCHING',
       description: 'Build velocity and command while maintaining arm health. Learn the art of pitch sequencing and mound presence.',
       icon: 'Zap',
-      image: 'https://t4.ftcdn.net/jpg/03/82/25/99/360_F_382259953_Zt1nLWCUUwSHtoiJUZqwmcUkjieaXdOw.jpgq=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1515516089376-88db1e26e9c0?q=80&w=2070&auto=format&fit=crop',
     },
     {
       title: 'FIELDING',
@@ -47,7 +47,7 @@ export const Services = ({
       title: 'FUNDAMENTALS',
       description: 'The bedrock of greatness. Personalized 1-on-1 instruction for all ages to master the core skills of the game.',
       icon: 'Trophy',
-      image: 'https://images.unsplash.com/photo-1508344928928-7165b67de128?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=2070&auto=format&fit=crop',
     },
   ],
 }: ServicesProps) => {
@@ -58,12 +58,16 @@ export const Services = ({
   });
 
   return (
-    <section ref={containerRef} className="relative bg-white overflow-hidden">
+    <section ref={containerRef} className="relative bg-white overflow-hidden h-[400vh]">
       {/* Background Watermark/Grid that spans the whole scroll height */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden opacity-[0.03]">
           <span className="text-[30vw] font-display text-slate-900 leading-none select-none">CAGE</span>
         </div>
+        {/* Technical lines integrated into the main section background */}
+        <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-slate-200 via-red-600/20 to-slate-200 hidden md:block" />
+        <div className="absolute left-12 top-0 bottom-0 w-[1px] bg-slate-100 hidden md:block" />
+        <div className="absolute right-12 top-0 bottom-0 w-[1px] bg-slate-100 hidden md:block" />
       </div>
 
       <div className="sticky top-0 h-screen flex flex-col md:flex-row overflow-hidden z-10">
@@ -168,13 +172,6 @@ export const Services = ({
             );
           })}
         </div>
-      </div>
-      
-      {/* Spacer to allow scrolling - now with a subtle technical line to fill the "blankness" */}
-      <div className="h-[300vh] relative">
-        <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-slate-200 via-red-600/20 to-slate-200 hidden md:block" />
-        <div className="absolute left-12 top-0 bottom-0 w-[1px] bg-slate-100 hidden md:block" />
-        <div className="absolute right-12 top-0 bottom-0 w-[1px] bg-slate-100 hidden md:block" />
       </div>
     </section>
   );
