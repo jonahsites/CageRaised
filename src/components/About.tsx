@@ -17,7 +17,7 @@ export const About = ({
     { label: 'Athletes Trained', value: '500+' },
     { label: 'Pro Prospects', value: '25+' },
   ],
-  image = 'https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=2070&auto=format&fit=crop',
+  image = 'https://images.unsplash.com/photo-1516731415730-0c6417231811?q=80&w=2070&auto=format&fit=crop',
 }: AboutProps) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
